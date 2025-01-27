@@ -31,7 +31,13 @@
   .copy-btn {
     padding: 10px 15px;
     cursor: pointer;
+text-decoration:none;background:#ffffff;font-size:18px;font-family:arial;cursor:pointer;color:#000000;padding:15px 30px;border-color:#000000;border-style:solid;border-radius:5px;border-width:3px;
   }
+
+.copy-btn:hover {
+        background-color: #002aff !important;
+        color: #fafafa !important;
+    }
   #feedback {
     margin-top: 20px;
   }
