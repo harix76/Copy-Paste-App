@@ -20,11 +20,14 @@
       flex-wrap: wrap;
       gap: 20px;
     }
-    .section {
+    .column {
       width: 45%;
+    }
+    .section {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 20px;
     }
     .section textarea {
       width: 100%;
@@ -43,48 +46,94 @@
 </head>
 <body>
   <div class="app-container">
-    <h1 style="margin-top: 90px";">Text Copy-Paste App</h1>
+    <h1>Text Copy-Paste App</h1>
 
-    <!-- Columns (Two Columns for 8 Sections) -->
+    <!-- Columns (8 sections in each column) -->
     <div class="columns">
-      <div class="section">
-        <textarea id="text-input-1" placeholder="Paste your text here..."></textarea>
-        <button class="copy-btn" data-target="text-input-1">Copy Text 1</button>
+      <!-- Column 1 -->
+      <div class="column">
+        <div class="section">
+          <textarea id="text-input-1" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-1">Copy Text 1</button>
+        </div>
+
+        <div class="section">
+          <textarea id="text-input-2" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-2">Copy Text 2</button>
+        </div>
+
+        <div class="section">
+          <textarea id="text-input-3" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-3">Copy Text 3</button>
+        </div>
+
+        <div class="section">
+          <textarea id="text-input-4" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-4">Copy Text 4</button>
+        </div>
+
+        <div class="section">
+          <textarea id="text-input-5" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-5">Copy Text 5</button>
+        </div>
+
+        <div class="section">
+          <textarea id="text-input-6" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-6">Copy Text 6</button>
+        </div>
+
+        <div class="section">
+          <textarea id="text-input-7" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-7">Copy Text 7</button>
+        </div>
+
+        <div class="section">
+          <textarea id="text-input-8" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-8">Copy Text 8</button>
+        </div>
       </div>
 
-      <div class="section">
-        <textarea id="text-input-2" placeholder="Paste your text here..."></textarea>
-        <button class="copy-btn" data-target="text-input-2">Copy Text 2</button>
-      </div>
+      <!-- Column 2 -->
+      <div class="column">
+        <div class="section">
+          <textarea id="text-input-9" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-9">Copy Text 9</button>
+        </div>
 
-      <div class="section">
-        <textarea id="text-input-3" placeholder="Paste your text here..."></textarea>
-        <button class="copy-btn" data-target="text-input-3">Copy Text 3</button>
-      </div>
+        <div class="section">
+          <textarea id="text-input-10" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-10">Copy Text 10</button>
+        </div>
 
-      <div class="section">
-        <textarea id="text-input-4" placeholder="Paste your text here..."></textarea>
-        <button class="copy-btn" data-target="text-input-4">Copy Text 4</button>
-      </div>
+        <div class="section">
+          <textarea id="text-input-11" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-11">Copy Text 11</button>
+        </div>
 
-      <div class="section">
-        <textarea id="text-input-5" placeholder="Paste your text here..."></textarea>
-        <button class="copy-btn" data-target="text-input-5">Copy Text 5</button>
-      </div>
+        <div class="section">
+          <textarea id="text-input-12" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-12">Copy Text 12</button>
+        </div>
 
-      <div class="section">
-        <textarea id="text-input-6" placeholder="Paste your text here..."></textarea>
-        <button class="copy-btn" data-target="text-input-6">Copy Text 6</button>
-      </div>
+        <div class="section">
+          <textarea id="text-input-13" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-13">Copy Text 13</button>
+        </div>
 
-      <div class="section">
-        <textarea id="text-input-7" placeholder="Paste your text here..."></textarea>
-        <button class="copy-btn" data-target="text-input-7">Copy Text 7</button>
-      </div>
+        <div class="section">
+          <textarea id="text-input-14" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-14">Copy Text 14</button>
+        </div>
 
-      <div class="section">
-        <textarea id="text-input-8" placeholder="Paste your text here..."></textarea>
-        <button class="copy-btn" data-target="text-input-8">Copy Text 8</button>
+        <div class="section">
+          <textarea id="text-input-15" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-15">Copy Text 15</button>
+        </div>
+
+        <div class="section">
+          <textarea id="text-input-16" placeholder="Paste your text here..."></textarea>
+          <button class="copy-btn" data-target="text-input-16">Copy Text 16</button>
+        </div>
       </div>
     </div>
 
