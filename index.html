@@ -140,6 +140,39 @@
     <p id="feedback"></p>
   </div>
 
-  <script src="app.js"></script>
+  <script>
+    // Load saved text from local storage on page load
+    document.addEventListener("DOMContentLoaded", () => {
+      for (let i = 1; i <= 16; i++) {
+        const textArea = document.getElementById(`text-input-${i}`);
+        const savedText = localStorage.getItem(`text-input-${i}`);
+        if (savedText) {
+          textArea.value = savedText;
+        }
+      }
+    });
+
+    // Add event listeners for copy buttons
+    const copyButtons = document.querySelectorAll(".copy-btn");
+    copyButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        const textArea = document.getElementById(targetId);
+        textArea.select();
+        textArea.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text to the clipboard
+        document.execCommand("copy");
+
+        // Save text to local storage
+        localStorage.setItem(targetId, textArea.value);
+
+        // Show feedback message
+        const feedback = document.getElementById("feedback");
+        feedback.textContent = `Text from ${targetId} copied!`;
+        setTimeout(() => feedback.textContent = "", 2000);
+      });
+    });
+  </script>
 </body>
 </html>
